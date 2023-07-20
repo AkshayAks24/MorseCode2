@@ -1,0 +1,141 @@
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #AAC8A7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative; /* Set the container as a positioning context */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* To hide any content overflowing from the container */
+  }
+  
+  .item {
+    position: relative; /* Enable positioning for each item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .first{
+    position: absolute;
+    top: -45px; /* Adjust the top distance as needed */
+    left: 52%; /* Center the h1 horizontally */
+    transform: translateX(-50%); /* Center the h1 horizontally */
+  }
+  
+  h1 {
+   
+    font-size: 100px;
+    font-family: Times New Roman, Times, serif;
+    font-weight: bold;
+    color: #4caf50;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #4caf50, #007bff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .morse-box {
+    position: absolute;
+    bottom: 5%; /* Adjust the distance from the bottom as needed */
+    width: 95%;
+    height : 35%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(211, 196, 170, 1); /* Use rgba with alpha value (0.9) for 90% transparency */
+    border: 2px solid rgba(150, 150, 150, 0.9); /* Set border with rgba and alpha value (0.9) */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p#morse-code {
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #2f2f2f; /* Set the text color to dark gray */
+    text-shadow: 1px 1px 0px #898121, 2px 2px 0px #bbb, 3px 3px 0px #aaa; /* Add 3D text shadow effect */
+    background-image: url("image/old-paper-texture.jpg"); /* Use an old paper texture as the background */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 20px; /* Add some padding to create a paper-like appearance */
+  
+  }
+  
+  input[type="text"] {
+    font-size: 60px;
+    padding: 40px;
+    width: 100%;
+    max-width: 80%;
+    outline: none;
+    position: absolute;
+    top: 40%; /* Adjust the top distance as needed */
+    left: 50%; /* Center the input field horizontally */
+    transform: translateX(-50%); /* Center the input field horizontally */
+    background-color: #E3BF80; /* Light brownish background color */
+    border: 2px solid #8C613D; /* Dark brown border */
+    color: #5a4632; /* Dark brown text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a slight text shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    opacity: 1; /* 90% opacity for a semi-transparent look */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #5a4632; /* Dark brown placeholder text color */
+  }
+  
+  input[type="text"]:focus {
+    background-color: #C4A77D; /* Lighter background color when focused */
+  }
+  
+  
+  button {
+    width: 50%;
+    font-size: 60px;
+    padding: 30px 30px;
+    position: absolute;
+    top: 70%; /* Adjust the top distance as needed */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: #C4A77D; /* Brownish background color */
+    border: 2px solid #8C613D; /* Dark brown border */
+    color: #fff; /* White text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a slight text shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Show a hand cursor on hover */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  }
+  
+  button:hover {
+    background-color: #E3BF80; /* Lighter background color on hover */
+  }
+  
