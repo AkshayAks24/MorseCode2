@@ -54,6 +54,10 @@ const morseCode = {
     const randomWord = randomWords[currentIndex];
   
     if (userGuess.toUpperCase() === randomWord) {
+      // Play the correct sound
+      const correctSound = document.getElementById('correct-sound');
+      correctSound.play();
+  
       alert('Congratulations! Your guess is correct.');
     } else {
       alert(`Oops! The correct word was "${randomWord}".`);

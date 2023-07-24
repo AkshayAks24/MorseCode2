@@ -125,7 +125,9 @@ html, body {
   button:hover {
     background-color: #E3BF80;
   }
+ 
   
+
   /* Media Queries for responsiveness */
   
   /* For screen width up to 768px (smartphones) */
@@ -156,6 +158,8 @@ html, body {
         padding: 10px 10px;
         width: 30%;
     }
+
+
   }
   
  
